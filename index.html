@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Putra&Putri Weeding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- simplyCountdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css"/>
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <nav>
+    <div class="logo">
+      <h1>Putra&Putri</h1>
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Product</a></li>
+      <li><a href="">Galery</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+    </nav>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex3
+    justify-content-center align-items-center text-white">
+
+        <main>
+            <h3>Kepada Bapak/Ibu/saudara/i,</h3>
+            <h1>Putra & Putri</h1>
+            <p>Akan Melangsungkan Resepsi Pernikahan Dalam:</p>
+            <h3>28 Desember 2023</h3>
+            <div class="simply-countdown"></div>
+            <a href="#undangan" class="btn tn-lg mt-4">Ketuk Untuk LIhat Undangan</a>
+        </main>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    
+    </script>
+    <script>
+        simplyCountdown('.simply-countdown',{
+            year: 2023, // required
+            month: 12, // required
+            day: 28, // required
+            hours: 9, // Default is 0 [0-23] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+    })
+    </script>
+    <br>
+  </body>
+</html>
