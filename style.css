@@ -75,6 +75,7 @@ nav ul{
     width: 40%;
     justify-content: space-between;
     padding: 6px;
+    word-spacing: 1px;
 }
 
 nav ul li a{
