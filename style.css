@@ -81,25 +81,17 @@ nav ul li a{
     text-decoration: none;
 }
 
-/* Media Query - laptop */
-@media (max-width: 992px) {
-    html {
-        font-size: 75%;
-    }
-
-    .simply-countdown > .simply-section {
-        padding: 70px;
-    }
-}
-
-/* Media Query - tablet */
+* Media Query - tablet */
 @media (max-width: 992px) {
     html {
         font-size: 65%;
     }
+    nav ul{
+        padding: 6px;        
+    }
 
     .simply-countdown > .simply-section {
-        padding: 60px;
+        padding: 38px;
         margin: 5px;
     }
 }
@@ -119,3 +111,4 @@ nav ul li a{
         margin: 10px;
     }
 }
+
