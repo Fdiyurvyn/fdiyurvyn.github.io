@@ -1,5 +1,5 @@
 :root {
-    --pink: #000000;
+    --pink: #e2af21;
     --bg: #0a0a0a;
     --shadow: 0 1px 2px rgb(0 0 0/ 0.5);
 }
@@ -11,7 +11,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(bg-weeding.jpg);
+    background-image: url(a.jpg);
+    z-index: -1;
 }
 .hero::before{
     content:'';
@@ -36,9 +37,16 @@ body{
 .hero h1{
     font-family: 'Sacramento', cursive;
     font-size: 6rem;
+    color: #db920b;
 }
 .hero h3{
     font-size: 1.6rem;
+    color: black;
+}
+
+.h2{
+    color: black;
+    font-size: 1rem;
 }
 
 .hero p{
@@ -51,39 +59,41 @@ body{
 
 .hero a:hover {
     background-color: var(--pink);
-    color: white;
+    color: #db920b;
 }
-.logo{
-    font-size: 1.2rem;
-    margin-right: 50px;
-    color: #fff;
-    font-family: 'Sacramento', cursive;
-}
-nav{
-    display: flex;
-    background-color: #b8a70d;
-    justify-content: space-around;
-    padding: 5px 0;
-    color: rgb(224, 192, 225);
+.navbar {
+    background-color: rgba(255, 197, 111, 0.5) !important;
+    backdrop-filter: blur(4px);
 }
 
-
-
-nav ul{
-    display: flex;
-    list-style: none;
-    width: 40%;
-    justify-content: space-between;
-    padding: 6px;
-    word-spacing: 1px;
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
-nav ul li a{
-    color: #fff;
-    text-decoration: none;
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover, .nav5:hover {
+    background-color: var(--pink);
+
 }
 
-* Media Query - tablet */
+.navbar-brand {
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* Media Query - laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 70px;
+    }
+}
+
+/* Media Query - tablet */
 @media (max-width: 992px) {
     html {
         font-size: 65%;
@@ -110,7 +120,7 @@ nav ul li a{
 
     .simply-countdown > .simply-section {
         padding: 38px;
-        margin: 10px;
+        margin-right: 1px;
     }
 }
 
